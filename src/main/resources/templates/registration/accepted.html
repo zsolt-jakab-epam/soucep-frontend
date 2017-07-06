@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>SouceP!</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" media="screen"/>
+    <link th:href="@{/css/core.css}" rel="stylesheet" media="screen"  />
+</head>
+<body>
+
+<div class="container">
+    <div class="text-left">
+
+        <h1>SouceP</h1>
+
+        <div class="lead" th:insert="http://www.thymeleaf.org :: section.description">
+            The registration has been accepted for processing, but the processing has not been completed.
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

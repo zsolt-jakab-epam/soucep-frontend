@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>SouceP!</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" media="screen"/>
+    <link th:href="@{/css/core.css}" rel="stylesheet" media="screen"/>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="text-left lead">
+        <h1>Registration:</h1>
+
+        <form method="post" th:action="@{/registration}">
+            <p>
+                First name:
+            </p>
+            <p>
+                <input type="text" name="firstName"/>
+            </p>
+            <p>
+                Last name:
+            </p>
+            <p>
+                <input type="text" name="lastName"/>
+            </p>
+            <p>
+                E-mail:
+            </p>
+            <p>
+                <input type="email" name="email"/>
+            </p>
+            <p>
+                <input class="btn btn-success btn-lg" type="submit" value="Submit"/>
+            </p>
+
+        </form>
+    </div>
+</div>
+</body>
+</html>

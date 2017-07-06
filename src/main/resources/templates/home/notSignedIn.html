@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Welcome to the Spring MVC Quickstart application! Get started quickly by signing up!</title>
+    <title>SouceP!</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" media="screen"/>
-    <link th:href="@{/css/core.css}" rel="stylesheet" media="screen"  />
+    <link th:href="@{/css/core.css}" rel="stylesheet" media="screen"/>
 </head>
 <body>
 
 <div class="container">
-    <div class="text-center">
+    <div class="text-left">
 
         <h1>SouceP</h1>
 
-        <div class="lead" th:insert="http://www.thymeleaf.org :: section.description">
+        <div class="lead">
             Welcome to SouceP!
             Get started quickly by signing up.
         </div>
 
         <p>
-            <a id="signup" class="btn btn-success btn-lg">Sign up</a>
+            <a th:href="@{/registration}" class="btn btn-success btn-lg">Sign up</a>
         </p>
     </div>
 </div>
